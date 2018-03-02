@@ -13,6 +13,11 @@
   text-align: center;
 }
 
+.card-title{
+  display:inline-block;
+  width:50%;
+}
+
 #HTML_area{
   display:inline-block;
   float:left;
