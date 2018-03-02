@@ -10,7 +10,6 @@ if(isset($_GET)){
     
     $_SESSION['lang'] = $_GET['lang'];
 }
-else
-    include_once("VisuHTML_".$_SESSION['lang'].html)
-    
+
+include_once("VisuHTML_".$_SESSION['lang'].html)    
  ?>
