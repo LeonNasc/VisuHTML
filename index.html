@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+  <title>VisuHTML - Visualize seu HTML</title>
+  <meta charset="utf-8"></meta>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    VisuHTML
+  </header>
+  <div class="container">
+
+    <div id="HTML_area" class="input-content">
+      <textarea id="HTML_src" placeholder="<h1>Olá Mundo</h1>" onkeyup="updateHTML()">
+      </textarea>
+    </div>
+
+    <div id="CSS_area" class="input-content">
+      <textarea id="CSS_src" placeholder="h1{\ncolor:red}>" onkeyup="updateCSS()">
+      </textarea>
+    </div>
+
+  </div>
+
+    <iframe id="View" seamless>
+
+    </iframe>
+
+
+</body>

@@ -1,0 +1,30 @@
+.container{
+  margin: 0 auto;
+}
+.input-content{
+  height:40vh;
+  overflow:auto;
+  width:48%;
+  border:1px solid green;
+  overflow:hidden;
+}
+
+#HTML_area{
+  display:inline-block;
+  float:left;
+  margin-left: 1%;
+}
+#CSS_area{
+  margin-left:51%;
+}
+textarea{
+  width:99%;
+  height:99%;
+}
+
+iframe{
+  display:block;
+  margin: 2% auto;
+  width:800px;
+  height:600px;
+}
