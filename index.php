@@ -7,6 +7,6 @@ if(isset($_GET)){
 if(!$_GET['lang']){
         $_SESSION['lang']='pt';
 }
-var_dump($_SESSION['lang']);
-include_once("VisuHTML_".$_SESSION['lang'].html)    
+
+include_once("VisuHTML_".$_SESSION['lang']. ".html");
  ?>
