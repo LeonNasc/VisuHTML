@@ -3,8 +3,7 @@ function updateHTML(){
   var iframe = document.getElementById("View");
   iframe = iframe.contentWindow.document;
 
-  writeHTML(iframe,src.value)
-
+  writeHTML(iframe,src.value);
 }
 
 function updateCSS(){

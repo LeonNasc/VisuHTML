@@ -5,7 +5,7 @@
   <meta charset="utf-8"></meta>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="styles.css"/>
 
   <script src="scripts.js"></script>
@@ -13,20 +13,25 @@
 
 <body>
   <header class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">VisuHTML</a>
-  </header>
-  <div class="container">
+    <i class="material-icons">lightbulb_outline</i> <a class="navbar-brand"> VisuHTML</a>
 
-    <div id="HTML_area" class="input-content">
-      <textarea id="HTML_src" placeholder="<h1>Olá Mundo</h1>"
+    <ul class="navbar-nav justify-content-end">
+      <li class="nav-item"><a class="nav-link" href="https://github.com/LeonNasc">Mais projetos </a></li>
+      <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+    </ul>
+  </header>
+  <div>
+
+    <div id="HTML_area" class="card input-content">
+      <textarea class="form-control" id="HTML_src" placeholder="<h1>Olá Mundo</h1>"
         onkeyup="updateHTML()"
         onfocus="updateHTML()"
         onblur="updateHTML()">
       </textarea>
     </div>
 
-    <div id="CSS_area" class="input-content">
-      <textarea id="CSS_src" placeholder="h1{\ncolor:red}>"
+    <div id="CSS_area" class="card input-content">
+      <textarea class="form-control" id="CSS_src" placeholder="h1{\ncolor:red}>"
         onkeyup="updateCSS()"
         onfocus="updateCSS()"
         onblur="updateCSS()">
@@ -37,5 +42,31 @@
 
     </iframe>
   </div>
+
+<div id="sobre" class="card">
+  <h4 class="card-title"> Sobre o projeto </h4>
+  <hr>
+  <p> Sempre que eu estava praticando em um projeto com HTML/CSS, eu sentia dificuldades
+    em conseguir visualizar o que eu estava escrevendo! É muito fácil perder a mão quando
+    você tem um monte de divs que estão apresentando a mais diversa variação de estilos
+    CSS.<br><br>
+
+    <strong>VisuHTML</strong> é um editor <i>WYSIWYG</i> em português e tem como finalidade
+    ajudar à todos que estão aprendendo HTML/CSS a visualizar melhor o que estão escrevendo.
+
+    <hr>
+    <h5> Alguns links úteis</h5>
+    <ul>
+      <li><a href="https://developer.mozilla.org/pt-BR/docs/Web">Mozilla Developer Network</a> (em português)</li>
+      <li><a href="http://pt-br.learnlayout.com/">LearnLayout.com</a> (em português)</li>
+      <li><a href="https://www.w3.org/WAI/intro/accessibility.php">W3.org sobre acesibilidade</a> (em inglês)</li>
+    </ul>
+</div>
+
+<footer class= "pagebottom">
+  <center>
+    VisuHTML | Leon Nascimento - 2018
+  </center>
+</footer>
 
 </body>
