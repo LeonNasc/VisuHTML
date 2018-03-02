@@ -1,6 +1,3 @@
-.container{
-  margin: 0 auto;
-}
 .input-content{
   height:40vh;
   overflow:auto;
@@ -22,9 +19,13 @@ textarea{
   height:99%;
 }
 
+header{
+  height:10vh;
+}
+
 iframe{
   display:block;
   margin: 2% auto;
-  width:800px;
-  height:600px;
+  min-width:800px;
+  min-height:600px;
 }

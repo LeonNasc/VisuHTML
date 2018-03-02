@@ -1,32 +1,41 @@
 <!DOCTYPE HTML>
 <head>
   <title>VisuHTML - Visualize seu HTML</title>
+
   <meta charset="utf-8"></meta>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="styles.css"/>
+
   <script src="scripts.js"></script>
 </head>
 
 <body>
-  <header>
-    VisuHTML
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">VisuHTML</a>
   </header>
   <div class="container">
 
     <div id="HTML_area" class="input-content">
-      <textarea id="HTML_src" placeholder="<h1>Olá Mundo</h1>" onkeyup="updateHTML()">
+      <textarea id="HTML_src" placeholder="<h1>Olá Mundo</h1>"
+        onkeyup="updateHTML()"
+        onfocus="updateHTML()"
+        onblur="updateHTML()">
       </textarea>
     </div>
 
     <div id="CSS_area" class="input-content">
-      <textarea id="CSS_src" placeholder="h1{\ncolor:red}>" onkeyup="updateCSS()">
+      <textarea id="CSS_src" placeholder="h1{\ncolor:red}>"
+        onkeyup="updateCSS()"
+        onfocus="updateCSS()"
+        onblur="updateCSS()">
       </textarea>
     </div>
-
-  </div>
 
     <iframe id="View" seamless>
 
     </iframe>
-
+  </div>
 
 </body>
