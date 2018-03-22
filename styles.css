@@ -1,8 +1,7 @@
 .input-content{
   height:50vh;
   overflow:auto;
-  width:46%;
-  border:1px solid green;
+  margin-bottom: 2%;
   overflow:hidden;
 }
 
@@ -18,14 +17,14 @@
   width:50%;
 }
 
-#HTML_area{
+/* #HTML_area{
   display:inline-block;
   float:left;
   margin-left: 4%;
-}
-#CSS_area{
+} */
+/* #CSS_area{
   margin-left:52%;
-}
+} */
 
 #sobre{
   padding:3%;
