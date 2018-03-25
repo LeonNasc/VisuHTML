@@ -1,3 +1,26 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+
 .input-content{
   height:50vh;
   overflow:auto;
@@ -17,14 +40,10 @@
   width:50%;
 }
 
-/* #HTML_area{
-  display:inline-block;
-  float:left;
-  margin-left: 4%;
-} */
-/* #CSS_area{
-  margin-left:52%;
-} */
+#pc-controls{
+  margin-top:2em;
+  padding: 2em;
+}
 
 #sobre{
   padding:3%;
@@ -38,7 +57,7 @@ body{
 textarea{
   width:99%;
   height:100%;
-  margin: 1px solid white;
+  margin: 2px solid green;
 }
 
 header{
@@ -49,7 +68,7 @@ header{
 iframe{
   display:block;
   margin: 2% auto;
-  border:1px solid green;
+  border:1px solid #ced4da;
   border-radius:2px;
   width:80vmax;
   min-height:60vmax;

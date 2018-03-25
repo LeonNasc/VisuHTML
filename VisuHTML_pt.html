@@ -23,6 +23,7 @@
   </header> <!-- Fim do header-->
 
 <div  class='container'><!-- Conteudo principal -->
+
   <div class="row">
 
     <div class="col-12"> <!-- Area das labels -->
@@ -40,13 +41,30 @@
       <textarea class="form-control" id="CSS_src" placeholder="h1{color:red}>" onkeyup="updateCSS()" onfocus="updateCSS()" onblur="updateCSS()" autocomplete="off"></textarea>
     </div> <!-- fim da area com CSS -->
   </div>
-  <div class="row">
-    <div id="placeholder_controls" class="card col-12">
-      <legend>Simule uma imagem</legend>
-      <input type="text" name="height" value="0" placeholder="Altura"/> <input type="text" name="width" value="0" placeholder="Largura"/>
+
+  <div id="pc-controls" class="col-12 card"> <!-- Placeholder de imagens -->
+    <div class="row" class="card col-12">
+      <div class="col-12">
+        <legend>Simule uma imagem  <a onmouseover="this.style.cursor='pointer'" onclick="collapse_toggle('placeholder_controls')">▼</a> </legend>
+      </div>
+      <hr>
+      <div  id="placeholder_controls"  class="collapse col-12">
+        <span class="col-1">Altura</span>
+        <input class="col-4" type="text" name="height" placeholder="Altura da imagem (em px, em ou %)"/>
+        <span class="col-1"></span>
+        <span class="col-1">Largura</span>
+        <input class="col-4" type="text" name="width" placeholder="Largura da imagem (em px, em ou %)"/>
+        <span class="col-1"></span>
+        <div class="col-12">
+          <hr>
+          <center><button class="btn btn-outline-success col-6" onclick="insert_placeholder()">Inserir placeholder</button></center>
+        </div>
+      </div>
     </div>
-  </div>
-    <iframe id="View" seamless></iframe> <!-- area de visualização -->
+  </div> <!-- Fim do Placeholder de imagens -->
+
+
+  <iframe id="View" seamless></iframe> <!-- area de visualização -->
 
   </div> <!-- Fim do conteudo principal -->
 
